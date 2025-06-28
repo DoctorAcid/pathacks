@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 const Innovate = () => {
   const { t } = useTranslation();
   return (
-    <div className="flex flex-col w-full  border-border-gray">
+    <div className="flex flex-col w-full border-r-[1px] border-border-gray">
       <div className="relative w-full h-8 border-b-[1px] border-border-gray">
         <Image
           fill

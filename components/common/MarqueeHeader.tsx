@@ -43,14 +43,14 @@ const MarqueeHeader: React.FC<MarqueeHeaderProps> = ({
   return (
     <div
       className="relative w-full overflow-hidden border-y border-border-gray py-8 md:py-10"
-      onMouseEnter={() => {
-        setIsHovered(true);
-        stopAnimation();
-      }}
-      onMouseLeave={() => {
-        setIsHovered(false);
-        startAnimation();
-      }}
+      // onMouseEnter={() => {
+      //   setIsHovered(true);
+      //   stopAnimation();
+      // }}
+      // onMouseLeave={() => {
+      //   setIsHovered(false);
+      //   startAnimation();
+      // }}
     >
       <motion.div
         initial={{ opacity: 1 }}
