@@ -1,7 +1,16 @@
 "use client";
 
 import PrimaryButton from "@/components/buttons/PrimaryButton";
+import Collaborate from "@/components/cards/whyPathacks/Collaborate";
+import Innovate from "@/components/cards/whyPathacks/Innovate";
+import Lead from "@/components/cards/whyPathacks/Lead";
+import MarqueeHeader from "@/components/common/MarqueeHeader";
+import HeroSection from "@/components/home/HeroSection";
+import IntroSection from "@/components/home/IntroSection";
+import PathacksAnimation from "@/components/home/PathacksAnimation";
+import WhySection from "@/components/home/WhySection";
 import Wrapper from "@/layout/Wrapper";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 
@@ -11,38 +20,12 @@ export default function Home() {
     <Wrapper>
       <div className="w-full">
         <main className="w-full flex flex-col items-center">
-          <section className="relative w-full flex flex-col items-center">
-            <div className="absolute bottom-0 w-full h-[1080px]">
-              <Image
-                fill
-                objectFit="cover"
-                objectPosition="bottom"
-                alt="hero-bg"
-                src="/assets/images/bgs/hero/bg-hero.jpg"
-                quality={100}
-              />
-            </div>
-            <div className="z-10 w-full p-16 flex flex-col gap-4">
-              <h1>{t("home-hero-title")}</h1>
-              <p>{t("home-hero-description")}</p>
-              <PrimaryButton text={t("button-join")} className="border-[1px]" />
-            </div>
-            <div className="w-full flex px-16 justify-center">
-              <Image
-                width={1440}
-                height={873}
-                alt="hero-image"
-                src="/assets/images/banners/hero/laptop.png"
-                quality={100}
-                className="z-10"
-              />
-            </div>
-          </section>
-          <section className="relative w-full flex flex-col items-center">
-            <div className="w-full flex flex-col gap-4 p-16">
-              <h3>{t("home-intro-title")}</h3>
-              <p>{t("home-intro-description")}</p>
-            </div>
+          <HeroSection />
+          <IntroSection />
+          <PathacksAnimation />
+          <WhySection />
+          <section className="w-full flex flex-col items-center">
+            <MarqueeHeader text={t("home-core-features-title")} />
           </section>
         </main>
       </div>

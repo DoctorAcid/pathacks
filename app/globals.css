@@ -51,3 +51,8 @@ p {
   font-weight: 200;
   line-height: 24px;
 }
+
+.title {
+  font-family: var(--font-pixelify-sans);
+  font-size: 148px;
+}

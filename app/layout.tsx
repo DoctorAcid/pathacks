@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
-import { DM_Sans, Poppins } from "next/font/google";
+import { DM_Sans, Poppins, Pixelify_Sans } from "next/font/google";
 import "./globals.css";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
+  subsets: ["latin"],
+});
+
+const pixelifySans = Pixelify_Sans({
+  variable: "--font-pixelify-sans",
   subsets: ["latin"],
 });
 
@@ -27,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`w-full ${dmSans.variable} ${poppins.variable} antialiased`}
+        className={`w-full ${dmSans.variable} ${poppins.variable} ${pixelifySans.variable} antialiased`}
       >
         {children}
       </body>
