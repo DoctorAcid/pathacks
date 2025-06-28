@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <nav className="w-full flex items-center justify-between border-b-[1px] border-border-gray">
       <div className="flex items-center">
-        <div className="flex items-center justify-center px-8  border-r-[1px] border-border-gray">
+        <div className="flex items-center justify-center px-8 h-[62px] border-r-[1px] border-border-gray">
           <Image
             width={134}
             height={24}
