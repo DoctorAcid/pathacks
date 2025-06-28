@@ -128,7 +128,7 @@ const PathacksAnimation = () => {
         transition={{
           duration: 1,
           repeat: Infinity,
-          ease: "linear",
+          ease: "easeIn",
           repeatDelay: 5,
           delay: 1.5,
         }}
@@ -147,7 +147,7 @@ const PathacksAnimation = () => {
         transition={{
           duration: 1,
           repeat: Infinity,
-          ease: "linear",
+          ease: "easeIn",
           repeatDelay: 3,
           delay: 1,
         }}
@@ -166,7 +166,7 @@ const PathacksAnimation = () => {
         transition={{
           duration: 1,
           repeat: Infinity,
-          ease: "linear",
+          ease: "easeIn",
           repeatDelay: 1,
         }}
         className="absolute bottom-10 left-10"
@@ -185,7 +185,7 @@ const PathacksAnimation = () => {
         transition={{
           duration: 1,
           repeat: Infinity,
-          ease: "linear",
+          ease: "easeIn",
           repeatDelay: 8,
           delay: 2,
         }}
@@ -204,7 +204,7 @@ const PathacksAnimation = () => {
         transition={{
           duration: 1,
           repeat: Infinity,
-          ease: "linear",
+          ease: "easeIn",
           repeatDelay: 8,
           delay: 4,
         }}
@@ -223,7 +223,7 @@ const PathacksAnimation = () => {
         transition={{
           duration: 1,
           repeat: Infinity,
-          ease: "linear",
+          ease: "easeIn",
           repeatDelay: 3,
         }}
         className="absolute bottom-40 right-10"
@@ -243,7 +243,7 @@ const PathacksAnimation = () => {
         transition={{
           duration: 1,
           repeat: Infinity,
-          ease: "linear",
+          ease: "easeIn",
           repeatDelay: 6,
         }}
         className="absolute bottom-0"
@@ -261,7 +261,7 @@ const PathacksAnimation = () => {
         transition={{
           duration: 1,
           repeat: Infinity,
-          ease: "linear",
+          ease: "easeIn",
           repeatDelay: 8,
           delay: 2,
         }}
@@ -282,7 +282,7 @@ const PathacksAnimation = () => {
         transition={{
           duration: 1,
           repeat: Infinity,
-          ease: "linear",
+          ease: "easeIn",
           repeatDelay: 5,
           delay: 3,
         }}
@@ -301,7 +301,7 @@ const PathacksAnimation = () => {
         transition={{
           duration: 1,
           repeat: Infinity,
-          ease: "linear",
+          ease: "easeIn",
           repeatDelay: 2,
           delay: 1,
         }}
@@ -320,7 +320,7 @@ const PathacksAnimation = () => {
         transition={{
           duration: 1,
           repeat: Infinity,
-          ease: "linear",
+          ease: "easeIn",
           repeatDelay: 1,
           delay: 3,
         }}
