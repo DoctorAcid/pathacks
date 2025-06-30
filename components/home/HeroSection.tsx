@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import PrimaryButton from "../buttons/PrimaryButton";
+import SplitLineText from "../animation/SplitLineText";
 
 const HeroSection = () => {
   const { t } = useTranslation();
@@ -20,8 +21,12 @@ const HeroSection = () => {
         />
       </div>
       <div className="z-10 w-full p-16 flex flex-col gap-4">
-        <h1>{t("home-hero-title")}</h1>
-        <p>{t("home-hero-description")}</p>
+        <SplitLineText>
+          <h1>{t("home-hero-title")}</h1>
+        </SplitLineText>
+        <SplitLineText>
+          <p>{t("home-hero-description")}</p>
+        </SplitLineText>
         <PrimaryButton text={t("button-join")} className="border-[1px]" />
       </div>
       <div className="w-full flex px-16 justify-center">

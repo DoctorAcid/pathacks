@@ -7,6 +7,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import MarqueeHeader from "../common/MarqueeHeader";
 import { useTranslation } from "react-i18next";
+import SplitLineText from "../animation/SplitLineText";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,6 +15,7 @@ const CoreFeatures = () => {
   const { t } = useTranslation();
   const slideRefs = useRef<(HTMLDivElement | null)[]>([]);
   const innerRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const imageBGRefs = useRef<(HTMLImageElement | null)[]>([]);
   const imageRWIRefs = useRef<(HTMLDivElement | null)[]>([]);
   const imageVC1Refs = useRef<(HTMLDivElement | null)[]>([]);
   const imageVC2Refs = useRef<(HTMLDivElement | null)[]>([]);
@@ -25,6 +27,7 @@ const CoreFeatures = () => {
     const ctx = gsap.context(() => {
       slideRefs.current.forEach((slide, i) => {
         const inner = innerRefs.current[i];
+        const imageBG = imageBGRefs.current[i];
         const imageRWI = imageRWIRefs.current[i];
         const imageVC1 = imageVC1Refs.current[i];
         const imageVC2 = imageVC2Refs.current[i];
@@ -45,13 +48,28 @@ const CoreFeatures = () => {
         // Animate inner content scrolling upward
         gsap.fromTo(
           inner,
+          { scale: 1 },
+          {
+            scale: 1,
+            ease: "none",
+            scrollTrigger: {
+              trigger: slide,
+              start: "top top",
+              end: "+=100%",
+              scrub: true,
+            },
+          }
+        );
+
+        gsap.fromTo(
+          imageBG,
           { opacity: 0 },
           {
             opacity: 1,
             ease: "none",
             scrollTrigger: {
               trigger: slide,
-              start: "top top",
+              start: "top center",
               end: "+=100%",
               scrub: true,
             },
@@ -160,6 +178,15 @@ const CoreFeatures = () => {
   return (
     <section className="bg-black text-white w-full overflow-hidden">
       <MarqueeHeader text={t("home-core-features-title")} />
+      <div className="relative w-full h-8 border-b-[1px] border-border-gray">
+        <Image
+          fill
+          objectFit="cover"
+          objectPosition="center"
+          alt="angled-pattern"
+          src="/assets/images/patterns/angled-pattern-small.svg"
+        />
+      </div>
       <>
         <div
           ref={(el) => {
@@ -171,9 +198,12 @@ const CoreFeatures = () => {
             ref={(el) => {
               innerRefs.current[0] = el;
             }}
-            className="relative h-[150vh] p-16 flex flex-col gap-2 items-center"
+            className="relative h-[150vh] px-16 py-24 flex flex-col gap-2 items-center overflow-hidden"
           >
             <Image
+              ref={(el) => {
+                imageBGRefs.current[0] = el;
+              }}
               fill
               objectFit="cover"
               objectPosition="top"
@@ -183,17 +213,24 @@ const CoreFeatures = () => {
             />
 
             <div className="z-10 flex flex-col items-center gap-4 w-full">
-              <h1 className="">Real-World Impact</h1>
-              <p className="max-w-2xl text-center">
-                Dive into hands-on projects that solve real problems and make a
-                tangible difference. Our curriculum is designed to mirror the
-                demands of the professional tech world, ensuring you gain skills
-                that are immediately applicable. 
-              </p>
+              <SplitLineText>
+                <h1 className="">Real-World Impact</h1>
+              </SplitLineText>
+              <SplitLineText className="max-w-2xl text-center">
+                <p>
+                  Dive into hands-on projects that solve real problems and make
+                  a tangible difference. Our curriculum is designed to mirror
+                  the demands of the professional tech world, ensuring you gain
+                  skills that are immediately applicable. 
+                </p>
+              </SplitLineText>
             </div>
             <div className="absolute inset-0 flex items-center justify-center w-screen h-screen overflow-hidden">
               <div className="absolute inset-0 w-[100vw] h-">
                 <Image
+                  ref={(el) => {
+                    imageBGRefs.current[0] = el;
+                  }}
                   fill
                   objectFit="cover"
                   objectPosition="center"
@@ -232,6 +269,9 @@ const CoreFeatures = () => {
             className="relative h-[150vh] p-16 flex flex-col gap-2 items-center"
           >
             <Image
+              ref={(el) => {
+                imageBGRefs.current[1] = el;
+              }}
               fill
               objectFit="cover"
               objectPosition="top"
@@ -241,17 +281,24 @@ const CoreFeatures = () => {
             />
 
             <div className="z-10 flex flex-col items-center gap-4 w-full">
-              <h1 className="">Vibrant Community </h1>
-              <p className="max-w-2xl text-center">
-                Connect with fellow Pathackers, mentors, and industry experts
-                from around the world. Our Discord community is a hub for
-                knowledge sharing, peer review, and collaborative
-                problem-solving. You're never alone on your journey. 
-              </p>
+              <SplitLineText>
+                <h1 className="">Vibrant Community </h1>
+              </SplitLineText>
+              <SplitLineText className="max-w-2xl text-center">
+                <p>
+                  Connect with fellow Pathackers, mentors, and industry experts
+                  from around the world. Our Discord community is a hub for
+                  knowledge sharing, peer review, and collaborative
+                  problem-solving. You're never alone on your journey. 
+                </p>
+              </SplitLineText>
             </div>
             <div className="absolute inset-0 flex items-center justify-center w-screen h-screen overflow-hidden">
               <div className="absolute inset-0 w-[100vw] h-">
                 <Image
+                  ref={(el) => {
+                    imageBGRefs.current[1] = el;
+                  }}
                   fill
                   objectFit="cover"
                   objectPosition="center"
@@ -303,6 +350,9 @@ const CoreFeatures = () => {
             className="relative h-[150vh] p-16 flex flex-col gap-2 items-center"
           >
             <Image
+              ref={(el) => {
+                imageBGRefs.current[2] = el;
+              }}
               fill
               objectFit="cover"
               objectPosition="top"
@@ -312,17 +362,24 @@ const CoreFeatures = () => {
             />
 
             <div className="z-10 flex flex-col items-center gap-4 w-full">
-              <h1 className="">Future-Ready Skills</h1>
-              <p className="max-w-2xl text-center">
-                Master cutting-edge technologies and advanced concepts, from
-                foundational programming to AI and modern web frameworks. We
-                equip you with the skills needed to thrive in tomorrow's rapidly
-                evolving digital landscape. 
-              </p>
+              <SplitLineText>
+                <h1 className="">Future-Ready Skills</h1>
+              </SplitLineText>
+              <SplitLineText className="max-w-2xl text-center">
+                <p>
+                  Master cutting-edge technologies and advanced concepts, from
+                  foundational programming to AI and modern web frameworks. We
+                  equip you with the skills needed to thrive in tomorrow's
+                  rapidly evolving digital landscape. 
+                </p>
+              </SplitLineText>
             </div>
             <div className="absolute inset-0 flex items-center justify-center w-screen h-screen overflow-hidden">
               <div className="absolute inset-0 w-[100vw] h-">
                 <Image
+                  ref={(el) => {
+                    imageBGRefs.current[2] = el;
+                  }}
                   fill
                   objectFit="cover"
                   objectPosition="center"

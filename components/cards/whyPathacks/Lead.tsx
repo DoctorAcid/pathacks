@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import SplitLineText from "@/components/animation/SplitLineText";
 
 const Lead = () => {
   const { t } = useTranslation();
@@ -62,7 +63,9 @@ const Lead = () => {
         </motion.svg>
       </div>
       <div className="flex flex-col p-16">
-        <h3>{t("home-why-pathacks-lead")}</h3>
+        <SplitLineText>
+          <h2>{t("home-why-pathacks-lead")}</h2>
+        </SplitLineText>
       </div>
     </div>
   );

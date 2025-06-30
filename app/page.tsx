@@ -17,6 +17,10 @@ import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
+import YourJourney from "@/components/home/YourJourney";
+import BuildFuture from "@/components/home/BuildFuture";
+import StudentsMentors from "@/components/home/StudentsMentors";
+import Pricing from "@/components/home/Pricing";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -35,46 +39,10 @@ export default function Home() {
           <PathacksAnimation />
           <WhySection />
           <CoreFeatures />
-          <section className="relative flex flex-col w-full h-[90vh] items-center">
-            <Image
-              fill
-              objectFit="cover"
-              objectPosition="top"
-              alt=""
-              src="/assets/images/bgs/core_features/coding.jpg"
-            />
-            <div className="relative w-full h-8 border-b-[1px] border-border-gray">
-              <Image
-                fill
-                objectFit="cover"
-                objectPosition="center"
-                alt="angled-pattern"
-                src="/assets/images/patterns/angled-pattern-small.svg"
-              />
-            </div>
-            <div className="z-10 grid grid-cols-2 w-full p-16">
-              <h1>Your Journey Starts Here. </h1>
-              <div className="flex flex-col gap-4">
-                <h3>Beyond the Classroom: Tech That Transforms.</h3>
-                <p>
-                  Experience hands-on learning that prepares you for tomorrow's
-                  challenges. Master the skills that matter, with a global
-                  community by your side.
-                </p>
-                <p>
-                  Our unique dimensional progression guides you through
-                  increasingly complex concepts, ensuring a deep understanding
-                  and practical mastery. From your first line of code to
-                  deploying your own applications, we provide the structured
-                  path and dedicated support you need to succeed.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section className="w-full flex-flex-col items-center">
-            <MarqueeHeader text="Ready to Build Your Future?" />
-          </section>
+          <YourJourney />
+          <BuildFuture />
+          <StudentsMentors />
+          <Pricing />
         </main>
       </div>
     </Wrapper>

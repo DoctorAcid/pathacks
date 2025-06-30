@@ -77,7 +77,7 @@ const PrimaryButton = ({ text, className, href }: PrimaryButtonProps) => {
         onMouseLeave={() => setHovered(false)}
         className={`${
           className && className
-        } relative bg-black text-white px-8 py-6 border-border-gray uppercase overflow-hidden cursor-pointer`}
+        } relative flex items-center justify-center bg-black text-white px-8 py-6 border-border-gray uppercase overflow-hidden cursor-pointer`}
       >
         <div className="flex flex-wrap">
           {text.split("").map((char, i) => (

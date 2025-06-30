@@ -42,7 +42,7 @@ const MarqueeHeader: React.FC<MarqueeHeaderProps> = ({
 
   return (
     <div
-      className="relative w-full overflow-hidden border-y border-border-gray py-8 md:py-10"
+      className="relative w-full h-fit overflow-hidden border-y border-border-gray py-8 md:py-10"
       // onMouseEnter={() => {
       //   setIsHovered(true);
       //   stopAnimation();
