@@ -12,7 +12,7 @@ const WhySection = () => {
   return (
     <section className="w-full flex flex-col items-center">
       <MarqueeHeader text={t("home-why-pathacks-title")} />
-      <div className="grid grid-cols-3 gap-8 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
         <Innovate />
         <Collaborate />
         <Lead />

@@ -20,12 +20,12 @@ const Pricing = () => {
           src="/assets/images/patterns/angled-pattern-small.svg"
         />
       </div>
-      <div className="grid grid-cols-4 w-full border-b-[1px] border-border-gray mb-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 w-full border-b-[1px] border-border-gray mb-8">
         {price_list.map((list, index) => {
           return (
             <div
               key={index}
-              className="flex flex-col w-full border-r-[1px] border-border-gray"
+              className="flex flex-col w-full border-r-0 md:border-r-[1px] border-y-[1px] lg:border-y-0 mb-8 lg:mb-0 border-border-gray"
             >
               <div className="flex flex-col gap-4 w-full p-8">
                 <SplitLineText>

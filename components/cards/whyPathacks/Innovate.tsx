@@ -9,7 +9,7 @@ import SplitLineText from "@/components/animation/SplitLineText";
 const Innovate = () => {
   const { t } = useTranslation();
   return (
-    <div className="flex flex-col w-full border-r-[1px] border-border-gray">
+    <div className="flex flex-col w-full border-r-0 md:border-r-[1px] border-b-[1px] md:border-b-0 border-border-gray">
       <div className="relative w-full h-8 border-b-[1px] border-border-gray">
         <Image
           fill
@@ -58,7 +58,7 @@ const Innovate = () => {
           />
         </motion.svg>
       </div>
-      <div className="flex flex-col p-16">
+      <div className="flex flex-col p-4 md:p-8 lg:p-16">
         <SplitLineText>
           <h2>{t("home-why-pathacks-innovate")}</h2>
         </SplitLineText>

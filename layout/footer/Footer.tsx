@@ -22,8 +22,8 @@ const Footer = () => {
         src="/assets/images/bgs/footer/footer-bg.jpg"
         quality={100}
       />
-      <div className="z-10 flex flex-col w-full h-full items-center justify-between">
-        <div className="flex w-full justify-between p-16">
+      <div className="z-10 flex flex-col w-full h-full mt-4 md:mt-0 items-center justify-between">
+        <div className="flex flex-col md:flex-row w-full justify-between p-4 md:p-8 lg:p-16">
           <div className="flex flex-col gap-4">
             <Image
               width={448}
@@ -35,7 +35,7 @@ const Footer = () => {
               <p>Code Your Future. Build Your World. </p>
             </SplitLineText>
           </div>
-          <div className="flex flex-col text-right items-end gap-4">
+          <div className="flex flex-col text-left md:text-right items-start mt-4 md:mt-0 md:items-end md-2 md:gap-4">
             <SplitLineText>
               <h3>Connect with Us</h3>
             </SplitLineText>
@@ -48,18 +48,18 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex w-full justify-between items-end p-16">
+        <div className="flex flex-col lg:flex-row w-full justify-between gap-8 items-start md:items-end p-4 md:p-8 lg:p-16">
           <div className="flex items-center gap-8">
             <Discord className="fill-white hover:fill-black" />
             <Facebook className="fill-white hover:fill-black" />
             <Instagram className="fill-white hover:fill-black" />
             <Linkedin className="fill-white hover:fill-black" />
           </div>
-          <div className="flex flex-col text-right items-end gap-4">
+          <div className="flex flex-col text-left md:text-right items-start md:items-end gap-4">
             <SplitLineText>
               <h4>For Partnership</h4>
             </SplitLineText>
-            <div className="flex justify-end gap-16">
+            <div className="flex flex-col md:flex-row justify-end gap-2 md:gap-16">
               <div className="group flex flex-col">
                 <Link href="mailto:contact@moroccolabs.com">
                   contact@moroccolabs.com

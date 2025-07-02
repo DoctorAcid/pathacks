@@ -10,7 +10,7 @@ import HeroAnimation from "../animation/HeroAnimation";
 const HeroSection = () => {
   const { t } = useTranslation();
   return (
-    <section className="relative w-full flex flex-col items-center">
+    <section className="relative w-full flex flex-col items-center pt-8 md:pt-0">
       <div className="absolute bottom-0 w-full h-[1080px]">
         {/* <Image
           fill
@@ -21,7 +21,7 @@ const HeroSection = () => {
           quality={100}
         /> */}
       </div>
-      <div className="z-10 w-full p-16 flex flex-col gap-4">
+      <div className="z-10 w-full p-4 md:p-8 lg:p-16 flex flex-col gap-4">
         <SplitLineText>
           <h1>{t("home-hero-title")}</h1>
         </SplitLineText>
@@ -30,7 +30,7 @@ const HeroSection = () => {
         </SplitLineText>
         <PrimaryButton text={t("button-join")} className="border-[1px]" />
       </div>
-      <div className="w-full flex px-16 justify-center overflow-hidden">
+      <div className="w-full min-w-[1280px] flex px-16 justify-center overflow-hidden">
         {/* <HeroAnimation />
         <Image
           width={1375}

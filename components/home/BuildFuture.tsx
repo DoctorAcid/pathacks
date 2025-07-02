@@ -19,9 +19,9 @@ const BuildFuture = () => {
         />
       </div>
       <div className="grid grid-cols-12 w-full border-y-[1px] border-border-gray mb-8">
-        <span className="col-span-3 h-[320px] border-b-[1px] border-border-gray" />
-        <div className="relative h-full flex flex-col items-center justify-center col-span-6 border-x-[0px] border-border-gray">
-          <div className="relative w-full h-[320px] flex flex-col items-center justify-center">
+        <span className="hidden lg:flex col-span-3 h-[200px] lg:h-[320px] border-b-[1px] border-border-gray" />
+        <div className="relative h-full flex flex-col items-center justify-center col-span-12 lg:col-span-6 border-x-[0px] border-border-gray">
+          <div className="relative w-full h-[200px] lg:h-[320px] flex flex-col items-center justify-center">
             <Image
               fill
               objectFit="cover"
@@ -30,14 +30,15 @@ const BuildFuture = () => {
               src="/assets/images/bgs/build_future/bg-gradient.jpg"
               quality={100}
             />
-
-            <Image
-              width={220}
-              height={220}
-              alt="build_step_1"
-              src="/assets/images/icons/build_future/learning.png"
-              className="z-10"
-            />
+            <div className="flex relative w-[128px] h-[128px] lg:w-[220px] lg:h-[220px] items-center justify-center">
+              <Image
+                width={220}
+                height={220}
+                alt="build_step_1"
+                src="/assets/images/icons/build_future/learning.png"
+                className="z-10"
+              />
+            </div>
           </div>
           <div className="w-full p-8">
             <SplitLineText>
@@ -45,12 +46,12 @@ const BuildFuture = () => {
             </SplitLineText>
           </div>
         </div>
-        <span className="col-span-3 h-[320px] border-b-[1px] border-border-gray" />
+        <span className="hidden lg:flex col-span-3 h-[200px] lg:h-[320px] border-b-[1px] border-border-gray" />
       </div>
 
       <div className="grid grid-cols-12 w-full border-y-[1px] border-border-gray mb-8">
-        <div className="relative h-full flex flex-col items-center justify-center col-span-6 border-border-gray">
-          <div className="relative w-full h-[320px] flex flex-col items-center justify-center">
+        <div className="relative h-full flex flex-col items-center justify-center col-span-12 lg:col-span-6 border-border-gray">
+          <div className="relative w-full h-[200px] lg:h-[320px] flex flex-col items-center justify-center">
             <Image
               fill
               objectFit="cover"
@@ -60,13 +61,15 @@ const BuildFuture = () => {
               quality={100}
             />
 
-            <Image
-              width={220}
-              height={220}
-              alt="build_step_1"
-              src="/assets/images/icons/build_future/journey.png"
-              className="z-10"
-            />
+            <div className="flex relative w-[128px] h-[128px] lg:w-[220px] lg:h-[220px] items-center justify-center">
+              <Image
+                width={220}
+                height={220}
+                alt="build_step_1"
+                src="/assets/images/icons/build_future/journey.png"
+                className="z-10"
+              />
+            </div>
           </div>
           <div className="w-full p-8">
             <SplitLineText>
@@ -74,13 +77,13 @@ const BuildFuture = () => {
             </SplitLineText>
           </div>
         </div>
-        <span className="col-span-4 h-[320px] border-b-[1px] border-border-gray" />
+        <span className="hidden lg:flex col-span-4 h-[200px] lg:h-[320px] border-b-[1px] border-border-gray" />
       </div>
 
       <div className="grid grid-cols-12 w-full border-y-[1px] border-border-gray mb-8">
-        <span className="col-span-5 h-[320px] border-b-[1px] border-border-gray" />
-        <div className="relative h-full flex flex-col items-center justify-center col-span-6 border-border-gray">
-          <div className="relative w-full h-[320px] flex flex-col items-center justify-center">
+        <span className="hidden lg:flex col-span-5 h-[200px] lg:h-[320px] border-b-[1px] border-border-gray" />
+        <div className="relative h-full flex flex-col items-center justify-center col-span-12 lg:col-span-6 border-border-gray">
+          <div className="relative w-full h-[200px] lg:h-[320px] flex flex-col items-center justify-center">
             <Image
               fill
               objectFit="cover"
@@ -90,13 +93,15 @@ const BuildFuture = () => {
               quality={100}
             />
 
-            <Image
-              width={220}
-              height={220}
-              alt="build_step_1"
-              src="/assets/images/icons/build_future/potential.png"
-              className="z-10"
-            />
+            <div className="flex relative w-[128px] h-[128px] lg:w-[220px] lg:h-[220px] items-center justify-center">
+              <Image
+                width={220}
+                height={220}
+                alt="build_step_1"
+                src="/assets/images/icons/build_future/potential.png"
+                className="z-10"
+              />
+            </div>
           </div>
           <div className="w-full p-8">
             <SplitLineText>
@@ -104,13 +109,13 @@ const BuildFuture = () => {
             </SplitLineText>
           </div>
         </div>
-        <span className="col-span-1 h-[320px] border-b-[1px] border-border-gray" />
+        <span className="hidden lg:flex col-span-1 h-[200px] lg:h-[320px] border-b-[1px] border-border-gray" />
       </div>
 
       <div className="grid grid-cols-12 w-full border-y-[1px] border-border-gray mb-8">
-        <span className="col-span-2 h-[320px] border-b-[1px] border-border-gray" />
-        <div className="relative h-full flex flex-col items-center justify-center col-span-6 border-border-gray">
-          <div className="relative w-full h-[320px] flex flex-col items-center justify-center">
+        <span className="hidden lg:flex col-span-2 h-[200px] lg:h-[320px] border-b-[1px] border-border-gray" />
+        <div className="relative h-full flex flex-col items-center justify-center col-span-12 lg:col-span-6 border-border-gray">
+          <div className="relative w-full h-[200px] lg:h-[320px] flex flex-col items-center justify-center">
             <Image
               fill
               objectFit="cover"
@@ -119,14 +124,15 @@ const BuildFuture = () => {
               src="/assets/images/bgs/build_future/bg-gradient.jpg"
               quality={100}
             />
-
-            <Image
-              width={220}
-              height={220}
-              alt="build_step_1"
-              src="/assets/images/icons/build_future/project.png"
-              className="z-10"
-            />
+            <div className="flex relative w-[128px] h-[128px] lg:w-[220px] lg:h-[220px] items-center justify-center">
+              <Image
+                width={220}
+                height={220}
+                alt="build_step_1"
+                src="/assets/images/icons/build_future/project.png"
+                className="z-10"
+              />
+            </div>
           </div>
           <div className="w-full p-8">
             <SplitLineText>
@@ -134,13 +140,13 @@ const BuildFuture = () => {
             </SplitLineText>
           </div>
         </div>
-        <span className="col-span-4 h-[320px] border-b-[1px] border-border-gray" />
+        <span className="hidden lg:flex col-span-4 h-[200px] lg:h-[320px] border-b-[1px] border-border-gray" />
       </div>
 
       <div className="grid grid-cols-12 w-full border-y-[1px] border-border-gray mb-8">
-        <span className="col-span-6 h-[320px] border-b-[1px] border-border-gray" />
-        <div className="relative h-full flex flex-col items-center justify-center col-span-6 border-border-gray">
-          <div className="relative w-full h-[320px] flex flex-col items-center justify-center">
+        <span className="hidden lg:flex col-span-6 h-[200px] lg:h-[320px] border-b-[1px] border-border-gray" />
+        <div className="relative h-full flex flex-col items-center justify-center col-span-12 lg:col-span-6 border-border-gray">
+          <div className="relative w-full h-[200px] lg:h-[320px] flex flex-col items-center justify-center">
             <Image
               fill
               objectFit="cover"
@@ -150,13 +156,15 @@ const BuildFuture = () => {
               quality={100}
             />
 
-            <Image
-              width={220}
-              height={220}
-              alt="build_step_1"
-              src="/assets/images/icons/build_future/community.png"
-              className="z-10"
-            />
+            <div className="flex relative w-[128px] h-[128px] lg:w-[220px] lg:h-[220px] items-center justify-center">
+              <Image
+                width={220}
+                height={220}
+                alt="build_step_1"
+                src="/assets/images/icons/build_future/community.png"
+                className="z-10"
+              />
+            </div>
           </div>
           <div className="w-full p-8">
             <SplitLineText>
@@ -167,9 +175,9 @@ const BuildFuture = () => {
       </div>
 
       <div className="grid grid-cols-12 w-full border-y-[1px] border-border-gray mb-8">
-        <span className="col-span-1 h-[320px] border-b-[1px] border-border-gray" />
-        <div className="relative h-full flex flex-col items-center justify-center col-span-6 border-border-gray">
-          <div className="relative w-full h-[320px] flex flex-col items-center justify-center">
+        <span className="hidden lg:flex col-span-1 h-[200px] lg:h-[320px] border-b-[1px] border-border-gray" />
+        <div className="relative h-full flex flex-col items-center justify-center col-span-12 lg:col-span-6 border-border-gray">
+          <div className="relative w-full h-[200px] lg:h-[320px] flex flex-col items-center justify-center">
             <Image
               fill
               objectFit="cover"
@@ -179,13 +187,15 @@ const BuildFuture = () => {
               quality={100}
             />
 
-            <Image
-              width={220}
-              height={220}
-              alt="build_step_1"
-              src="/assets/images/icons/build_future/mark.png"
-              className="z-10"
-            />
+            <div className="flex relative w-[128px] h-[128px] lg:w-[220px] lg:h-[220px] items-center justify-center">
+              <Image
+                width={220}
+                height={220}
+                alt="build_step_1"
+                src="/assets/images/icons/build_future/mark.png"
+                className="z-10"
+              />
+            </div>
           </div>
           <div className="w-full p-8">
             <SplitLineText>
@@ -193,7 +203,7 @@ const BuildFuture = () => {
             </SplitLineText>
           </div>
         </div>
-        <span className="col-span-5 h-[320px] border-b-[1px] border-border-gray" />
+        <span className="hidden lg:flex col-span-5 h-[200px] lg:h-[320px] border-b-[1px] border-border-gray" />
       </div>
     </section>
   );

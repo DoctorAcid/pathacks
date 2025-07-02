@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const PathacksAnimation = () => {
   return (
-    <section className="relative w-full h-[90vh] flex flex-col items-center justify-center border-t-[1px] border-border-gray overflow-hidden">
+    <section className="relative w-full h-[512px] mt-8 md:mt-0 md:h-[90vh] flex flex-col items-center justify-center border-t-[1px] border-border-gray overflow-hidden">
       <motion.div
         initial={{ opacity: 1 }}
         animate={{ opacity: [0, 1, 0, 0, 1] }}
@@ -339,7 +339,7 @@ const PathacksAnimation = () => {
         height={178}
         alt="pathacks-large"
         src="/assets/images/logos/pathacks-logo-large.png"
-        className=""
+        className="px-4 md:px-16"
       />
     </section>
   );

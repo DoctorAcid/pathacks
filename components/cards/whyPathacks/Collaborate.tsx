@@ -9,7 +9,7 @@ import SplitLineText from "@/components/animation/SplitLineText";
 const Collaborate = () => {
   const { t } = useTranslation();
   return (
-    <div className="flex flex-col w-full border-x-[1px] border-border-gray">
+    <div className="flex flex-col w-full border-x-0 md:border-x-[1px] border-y-[1px] md:border-y-0 border-border-gray">
       <div className="relative w-full h-8 border-b-[1px] border-border-gray">
         <Image
           fill
@@ -77,7 +77,7 @@ const Collaborate = () => {
           />
         </motion.svg>
       </div>
-      <div className="flex flex-col p-16">
+      <div className="flex flex-col p-4 md:p-8 lg:p-16">
         <SplitLineText>
           <h2>{t("home-why-pathacks-collaborate")}</h2>
         </SplitLineText>

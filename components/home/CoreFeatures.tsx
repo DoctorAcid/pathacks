@@ -198,7 +198,7 @@ const CoreFeatures = () => {
             ref={(el) => {
               innerRefs.current[0] = el;
             }}
-            className="relative h-[150vh] px-16 py-24 flex flex-col gap-2 items-center overflow-hidden"
+            className="relative h-[150vh] px-4 py-8 md:px-8 md:py-16 lg:px-16 lg:py-24 flex flex-col gap-2 items-center overflow-hidden"
           >
             <Image
               ref={(el) => {
@@ -212,7 +212,7 @@ const CoreFeatures = () => {
               quality={100}
             />
 
-            <div className="z-10 flex flex-col items-center gap-4 w-full">
+            <div className="z-10 flex flex-col items-center gap-4 w-full text-center">
               <SplitLineText>
                 <h1 className="">Real-World Impact</h1>
               </SplitLineText>

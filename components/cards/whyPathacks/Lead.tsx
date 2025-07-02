@@ -9,7 +9,7 @@ import SplitLineText from "@/components/animation/SplitLineText";
 const Lead = () => {
   const { t } = useTranslation();
   return (
-    <div className="flex flex-col w-full border-l-[1px] border-border-gray">
+    <div className="flex flex-col w-full border-l-0 md:border-l-[1px] border-t-[1px] md:border-t-0 border-border-gray">
       <div className="relative w-full h-8 border-b-[1px] border-border-gray">
         <Image
           fill
@@ -62,7 +62,7 @@ const Lead = () => {
           />
         </motion.svg>
       </div>
-      <div className="flex flex-col p-16">
+      <div className="flex flex-col p-4 md:p-8 lg:p-16">
         <SplitLineText>
           <h2>{t("home-why-pathacks-lead")}</h2>
         </SplitLineText>

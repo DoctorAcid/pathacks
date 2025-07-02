@@ -19,8 +19,8 @@ const StudentsMentors = () => {
         />
       </div>
       <div className="flex flex-col w-full items-center mb-8 border-b-[1px] border-border-gray">
-        <div className="grid grid-cols-2 w-full">
-          <div className="flex flex-col justify-center p-16 border-b-[1px] border-border-gray">
+        <div className="grid grid-col-1 md:grid-cols-2 w-full">
+          <div className="flex flex-col justify-center p-4 md:p-8 lg:p-16 border-b-[1px] border-border-gray">
             <SplitLineText>
               <h1>
                 At Pathacks, we believe learning to code shouldn't be a lonely
@@ -47,7 +47,7 @@ const StudentsMentors = () => {
             src="/assets/images/patterns/angled-pattern-small.svg"
           />
         </div>
-        <div className="flex flex-col gap-4 w-full p-16">
+        <div className="flex flex-col gap-4 w-full p-4 md:p-8 lg:p-16">
           <SplitLineText>
             <h3>
               That’s why we built a platform where students and mentors grow

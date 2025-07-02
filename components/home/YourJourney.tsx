@@ -6,7 +6,7 @@ import SplitLineText from "../animation/SplitLineText";
 
 const YourJourney = () => {
   return (
-    <section className="relative flex flex-col w-full h-[90vh] items-center mb-8">
+    <section className="relative flex flex-col w-full h-[1280px] md:h-[90vh] items-center mb-8">
       <Image
         fill
         objectFit="cover"
@@ -23,9 +23,9 @@ const YourJourney = () => {
           src="/assets/images/patterns/angled-pattern-small.svg"
         />
       </div>
-      <div className="z-10 grid grid-cols-2 w-full p-16">
+      <div className="z-10 grid grid-cols-1 md:grid-cols-2 w-full p-4 md:p-8 lg:p-16">
         <SplitLineText>
-          <h1>Your Journey Starts Here. </h1>
+          <h1>Your Journey Starts Here.</h1>
         </SplitLineText>
         <div className="flex flex-col gap-4">
           <SplitLineText>
