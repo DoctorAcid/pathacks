@@ -216,7 +216,7 @@ const CoreFeatures = () => {
               <SplitLineText>
                 <h1 className="">Real-World Impact</h1>
               </SplitLineText>
-              <SplitLineText className="max-w-2xl text-center">
+              <SplitLineText className="max-w-[800px] text-center">
                 <p>
                   Dive into hands-on projects that solve real problems and make
                   a tangible difference. Our curriculum is designed to mirror
@@ -284,7 +284,7 @@ const CoreFeatures = () => {
               <SplitLineText>
                 <h1 className="">Vibrant Community </h1>
               </SplitLineText>
-              <SplitLineText className="max-w-2xl text-center">
+              <SplitLineText className="max-w-[800px] text-center">
                 <p>
                   Connect with fellow Pathackers, mentors, and industry experts
                   from around the world. Our Discord community is a hub for
@@ -365,7 +365,7 @@ const CoreFeatures = () => {
               <SplitLineText>
                 <h1 className="">Future-Ready Skills</h1>
               </SplitLineText>
-              <SplitLineText className="max-w-2xl text-center">
+              <SplitLineText className="max-w-[800px] text-center">
                 <p>
                   Master cutting-edge technologies and advanced concepts, from
                   foundational programming to AI and modern web frameworks. We

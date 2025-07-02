@@ -37,7 +37,7 @@ const SplitLineText: React.FC<SplitLineTextProps> = ({
           wrapper.style.overflow = "hidden";
           wrapper.style.display = "block";
           wrapper.style.width = "100%";
-          wrapper.style.paddingRight = "1px"; // helps prevent text cutoff due to anti-aliasing
+          wrapper.style.paddingRight = "4px"; // helps prevent text cutoff due to anti-aliasing
           wrapper.style.paddingBottom = "2px";
           line.parentNode?.insertBefore(wrapper, line);
           wrapper.appendChild(line);
@@ -50,7 +50,7 @@ const SplitLineText: React.FC<SplitLineTextProps> = ({
             y: 0,
             opacity: 1,
             stagger: 0.1,
-            duration: 0.8,
+            duration: 1,
             delay,
             ease: "power3.out",
             onComplete: () => {
