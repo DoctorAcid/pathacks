@@ -43,6 +43,7 @@ const Pricing = () => {
               <PrimaryButton
                 text="get started now"
                 className="border-y-[1px] w-full"
+                href="https://www.pathacks.com/signup"
               />
               <div className="flex flex-col gap-4 w-full p-8">
                 {list.features.map((feature, i) => {

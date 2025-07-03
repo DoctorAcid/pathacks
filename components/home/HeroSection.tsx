@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import PrimaryButton from "../buttons/PrimaryButton";
 import SplitLineText from "../animation/SplitLineText";
 import HeroAnimation from "../animation/HeroAnimation";
+import Link from "next/link";
 
 const HeroSection = () => {
   const { t } = useTranslation();
@@ -28,7 +29,12 @@ const HeroSection = () => {
         <SplitLineText>
           <p>{t("home-hero-description")}</p>
         </SplitLineText>
-        <PrimaryButton text={t("button-join")} className="border-[1px]" />
+
+        <PrimaryButton
+          text={t("button-join")}
+          className="border-[1px]"
+          href="https://www.pathacks.com/curriculum"
+        />
       </div>
       <div className="w-full flex justify-center overflow-hidden">
         {/* <HeroAnimation />

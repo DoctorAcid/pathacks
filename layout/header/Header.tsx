@@ -14,26 +14,36 @@ const Header = () => {
 
   return (
     <nav className="w-full border-b-[1px] border-border-gray bg-black text-white relative z-50">
-      <div className="flex items-center justify-between h-[62px] px-4 md:px-8">
+      <div className="flex items-center justify-between h-[62px] pl-4 lg:px-8">
         {/* Logo */}
-        <div className="flex items-center justify-center border-border-gray">
-          <Image
-            width={134}
-            height={24}
-            alt="nav-logo"
-            src="/assets/images/logos/navbar-logo.svg"
-          />
+        <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center h-[62px] pr-8 border-r-[1px] border-border-gray">
+            <Image
+              width={134}
+              height={24}
+              alt="nav-logo"
+              src="/assets/images/logos/navbar-logo.svg"
+            />
+          </div>
+          <div className="hidden lg:flex items-center space-x-6">
+            <NavMenu />
+          </div>
         </div>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center space-x-6">
-          <NavMenu />
-          <PrimaryButton text={t("navigation-sign-up")} href="/" />
-          <PrimaryButton text={t("navigation-login")} href="/" />
+        <div className="hidden lg:flex items-center space-x-6">
+          <PrimaryButton
+            text={t("navigation-sign-up")}
+            href="https://www.pathacks.com/login"
+          />
+          <PrimaryButton
+            text={t("navigation-login")}
+            href="https://www.pathacks.com/signup"
+          />
         </div>
 
         {/* Mobile Hamburger */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <div
             onClick={() => setMenuOpen(!menuOpen)}
             className="focus:outline-none"
