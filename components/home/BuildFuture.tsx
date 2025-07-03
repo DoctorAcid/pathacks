@@ -77,7 +77,7 @@ const BuildFuture = () => {
             </SplitLineText>
           </div>
         </div>
-        <span className="hidden lg:flex col-span-4 h-[200px] lg:h-[320px] border-b-[1px] border-border-gray" />
+        <span className="hidden lg:flex col-span-6 h-[200px] lg:h-[320px] border-b-[1px] border-border-gray" />
       </div>
 
       <div className="grid grid-cols-12 w-full border-y-[1px] border-border-gray mb-8">

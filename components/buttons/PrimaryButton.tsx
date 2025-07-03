@@ -71,7 +71,10 @@ const PrimaryButton = ({ text, className, href }: PrimaryButtonProps) => {
   const [hovered, setHovered] = React.useState(false);
 
   return (
-    <Link href={href ? href : ""}>
+    <Link
+      href={href ? href : ""}
+      className={`${className && className} border-transparent`}
+    >
       <button
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}

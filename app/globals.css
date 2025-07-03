@@ -90,6 +90,7 @@ p {
   h1 {
     font-size: 48px;
     line-height: 48px;
+    letter-spacing: -4px;
   }
 
   h2 {
@@ -110,5 +111,43 @@ p {
   h5 {
     font-size: 16px;
     line-height: 16px;
+  }
+
+  .title {
+  font-family: var(--font-pixelify-sans);
+  font-size: 96px;
+  }
+}
+
+@media (max-width: 1028px) {
+  h1 {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -4px;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  h3 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  h4 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  h5 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .title {
+  font-family: var(--font-pixelify-sans);
+  font-size: 96px;
   }
 }

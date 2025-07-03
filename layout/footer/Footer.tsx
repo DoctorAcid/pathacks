@@ -25,12 +25,14 @@ const Footer = () => {
       <div className="z-10 flex flex-col w-full h-full mt-4 md:mt-0 items-center justify-between">
         <div className="flex flex-col md:flex-row w-full justify-between p-4 md:p-8 lg:p-16">
           <div className="flex flex-col gap-4">
-            <Image
-              width={448}
-              height={42}
-              alt="footer-small-logo"
-              src="/assets/images/logos/logo-footer.svg"
-            />
+            <div className="w-80">
+              <Image
+                width={448}
+                height={42}
+                alt="footer-small-logo"
+                src="/assets/images/logos/logo-footer.svg"
+              />
+            </div>
             <SplitLineText>
               <p>Code Your Future. Build Your World. </p>
             </SplitLineText>

@@ -21,6 +21,7 @@ import YourJourney from "@/components/home/YourJourney";
 import BuildFuture from "@/components/home/BuildFuture";
 import StudentsMentors from "@/components/home/StudentsMentors";
 import Pricing from "@/components/home/Pricing";
+import CoreFeaturesMobile from "@/components/home/CoreFeaturesMobile";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -38,7 +39,12 @@ export default function Home() {
           <IntroSection />
           <PathacksAnimation />
           <WhySection />
-          <CoreFeatures />
+          <div className="w-full hidden lg:flex">
+            <CoreFeatures />
+          </div>
+          <div className="w-full lg:hidden flex">
+            <CoreFeaturesMobile />
+          </div>
           <YourJourney />
           <BuildFuture />
           <StudentsMentors />

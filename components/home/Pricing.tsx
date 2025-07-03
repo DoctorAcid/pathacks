@@ -20,7 +20,7 @@ const Pricing = () => {
           src="/assets/images/patterns/angled-pattern-small.svg"
         />
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 w-full border-b-[1px] border-border-gray mb-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full border-b-[1px] border-border-gray mb-8">
         {price_list.map((list, index) => {
           return (
             <div

@@ -30,7 +30,7 @@ const HeroSection = () => {
         </SplitLineText>
         <PrimaryButton text={t("button-join")} className="border-[1px]" />
       </div>
-      <div className="w-full min-w-[1280px] flex px-16 justify-center overflow-hidden">
+      <div className="w-full flex justify-center overflow-hidden">
         {/* <HeroAnimation />
         <Image
           width={1375}
@@ -48,17 +48,19 @@ const HeroSection = () => {
           quality={100}
           className="z-10"
         /> */}
-        <video
-          width={1920}
-          height={1080}
-          autoPlay
-          loop
-          muted
-          src="/assets/videos/hero_video_1.mp4"
-          className="z-[-10]"
-          playsInline
-          preload="auto"
-        />
+        <div className="flex w-full items-center justify-center min-w-[1280px]">
+          <video
+            width={1920}
+            height={1080}
+            autoPlay
+            loop
+            muted
+            src="/assets/videos/hero_video_1.mp4"
+            className="z-[-10]"
+            playsInline
+            preload="auto"
+          />
+        </div>
       </div>
     </section>
   );

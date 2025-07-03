@@ -6,10 +6,14 @@ import { useTranslation } from "react-i18next";
 import nav_menu_list from "@/data/header/nav-menu";
 import PrimaryButton from "@/components/buttons/PrimaryButton";
 
-const NavMenu = () => {
+interface NavMenuProps {
+  className?: string;
+}
+
+const NavMenu = ({ className }: NavMenuProps) => {
   const { t } = useTranslation();
   return (
-    <ul className="flex">
+    <ul className={`flex ${className ? className : ""}`}>
       {nav_menu_list.map((nav, index) => {
         return (
           <li key={index}>
