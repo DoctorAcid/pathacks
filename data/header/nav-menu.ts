@@ -6,7 +6,7 @@ const nav_menu_list = [
     },
     {
         id: 2,
-        link: "https://discord.com/invite/kQCP5zfU",
+        link: "https://discord.gg/3MwnsFzNmK",
         title: "navigation-community"
     }
 ]
