@@ -34,11 +34,11 @@ const Header = () => {
         <div className="hidden lg:flex items-center space-x-6">
           <PrimaryButton
             text={t("navigation-sign-up")}
-            href="https://www.pathacks.com/login"
+            href="https://www.pathacks.com/signup"
           />
           <PrimaryButton
             text={t("navigation-login")}
-            href="https://www.pathacks.com/signup"
+            href="https://www.pathacks.com/login"
           />
         </div>
 
@@ -67,12 +67,12 @@ const Header = () => {
             <NavMenu className="flex-col w-full items-center" />
             <PrimaryButton
               text={t("navigation-sign-up")}
-              href="/"
+              href="https://www.pathacks.com/signup"
               className="w-full items-center justify-center"
             />
             <PrimaryButton
               text={t("navigation-login")}
-              href="/"
+              href="https://www.pathacks.com/login"
               className="w-full"
             />
           </motion.div>
